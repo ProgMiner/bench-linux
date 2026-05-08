@@ -40,6 +40,9 @@ Check your systems CPU configurations (for example, using `htop`):
 If you have at least 5 CPU cores, the default config in [./mkimg.benchmark.sh](./mkimg.benchmark.sh)
 is already good for you since it isolates CPU 4. Otherwise, change the parameters in `kernel_cmdline`.
 
+If you are aggree with the default configuration,
+you may check the [RELEASES](./releases) page for a prebuilt ISO.
+
 Finally, type in your terminal being in the root of this repository:
 
 ```bash
@@ -198,4 +201,4 @@ fully-AI-produced contributions are undesirable to preserve the simplicity and u
 
 ## License
 
-Public domain.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
