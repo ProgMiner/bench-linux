@@ -40,8 +40,7 @@ Check your systems CPU configurations (for example, using `htop`):
 If you have at least 5 CPU cores, the default config in [./mkimg.benchmark.sh](./mkimg.benchmark.sh)
 is already good for you since it isolates CPU 4. Otherwise, change the parameters in `kernel_cmdline`.
 
-If you are aggree with the default configuration,
-you may check the [RELEASES](./releases) page for a prebuilt ISO.
+If you are aggree with the default configuration, you may check the RELEASES page for a prebuilt ISO.
 
 Finally, type in your terminal being in the root of this repository:
 
@@ -63,7 +62,7 @@ docker cp $container:/iso/. ./output
 docker rm $container
 ```
 
-1. After it, you will get a directory `output` with the ISO inside
+After it, you will get a directory `output` with the ISO inside
 
 ### Run
 
@@ -169,7 +168,7 @@ Once you've stopped all unnecessary task, run your benchmarks on the picked CPU 
 It could be done using `taskset` or by configuration inside the benchmark itself:
 
 ```bash
-taskset -c 4 sleep 10 $ run "sleep 10" on the CPU 4
+taskset -c 4 sleep 10 # run "sleep 10" on the CPU 4
 ```
 
 Also, ensure the usage of the "performance" power governor for the picked CPU, if applicable:
