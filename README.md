@@ -51,6 +51,10 @@ any benchmarks:
 These noises lead to observing a huge number of "outliers" during long-running benchmarks.
 Using this, you may significantly reduce their number.
 
+> [!NOTE]
+> Using this distribution, however, don't save you from all sources of the noise.
+> For example, from CPU throttling caused by overheating.
+
 ## Quick Start
 
 Check the RELEASES tab on GitHub to **[⬇️ download a prebuilt ISO](../../releases)** for `x86_64` (`amd64`)
